@@ -28,168 +28,148 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
-            cadastroToolStripMenuItem = new ToolStripMenuItem();
-            eventosToolStripMenuItem = new ToolStripMenuItem();
-            palestrantesToolStripMenuItem = new ToolStripMenuItem();
-            participantesToolStripMenuItem = new ToolStripMenuItem();
-            toolStripSeparator2 = new ToolStripSeparator();
-            cidadeToolStripMenuItem = new ToolStripMenuItem();
-            inscriçãoToolStripMenuItem1 = new ToolStripMenuItem();
-            inscriçãoToolStripMenuItem = new ToolStripMenuItem();
-            relatóriosToolStripMenuItem = new ToolStripMenuItem();
-            sairToolStripMenuItem = new ToolStripMenuItem();
-            btnCadastroPalestrante = new ReaLTaiizor.Controls.MaterialButton();
-            btnCadastroParticipante = new ReaLTaiizor.Controls.MaterialButton();
-            toolStripSeparator3 = new ToolStripSeparator();
-            menuStrip1.SuspendLayout();
-            SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.palestrantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.participantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.cidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inscriçãoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.inscriçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.participanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.palestranteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { cadastroToolStripMenuItem, inscriçãoToolStripMenuItem, relatóriosToolStripMenuItem, sairToolStripMenuItem });
-            menuStrip1.Location = new Point(3, 64);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(628, 24);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastroToolStripMenuItem,
+            this.inscriçãoToolStripMenuItem,
+            this.relatóriosToolStripMenuItem,
+            this.sairToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(3, 64);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(628, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // cadastroToolStripMenuItem
             // 
-            cadastroToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { eventosToolStripMenuItem, toolStripSeparator3, palestrantesToolStripMenuItem, participantesToolStripMenuItem, toolStripSeparator2, cidadeToolStripMenuItem, inscriçãoToolStripMenuItem1 });
-            cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            cadastroToolStripMenuItem.Size = new Size(122, 20);
-            cadastroToolStripMenuItem.Text = "&Cadastros";
+            this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eventosToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.palestrantesToolStripMenuItem,
+            this.participantesToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.cidadeToolStripMenuItem,
+            this.inscriçãoToolStripMenuItem1});
+            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.cadastroToolStripMenuItem.Text = "&Cadastros";
             // 
             // eventosToolStripMenuItem
             // 
-            eventosToolStripMenuItem.Name = "eventosToolStripMenuItem";
-            eventosToolStripMenuItem.Size = new Size(180, 22);
-            eventosToolStripMenuItem.Text = "&Eventos";
-            eventosToolStripMenuItem.Click += eventosToolStripMenuItem_Click;
-            // 
-            // palestrantesToolStripMenuItem
-            // 
-            palestrantesToolStripMenuItem.Name = "palestrantesToolStripMenuItem";
-            palestrantesToolStripMenuItem.Size = new Size(180, 22);
-            palestrantesToolStripMenuItem.Text = "&Palestrantes";
-            palestrantesToolStripMenuItem.Click += palestrantesToolStripMenuItem_Click;
-            // 
-            // participantesToolStripMenuItem
-            // 
-            participantesToolStripMenuItem.Name = "participantesToolStripMenuItem";
-            participantesToolStripMenuItem.Size = new Size(180, 22);
-            participantesToolStripMenuItem.Text = "&Participantes";
-            participantesToolStripMenuItem.Click += participantesToolStripMenuItem_Click;
-            // 
-            // toolStripSeparator2
-            // 
-            toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new Size(177, 6);
-            // 
-            // cidadeToolStripMenuItem
-            // 
-            cidadeToolStripMenuItem.Name = "cidadeToolStripMenuItem";
-            cidadeToolStripMenuItem.Size = new Size(180, 22);
-            cidadeToolStripMenuItem.Text = "&Cidades";
-            cidadeToolStripMenuItem.Click += cidadeToolStripMenuItem_Click;
-            // 
-            // inscriçãoToolStripMenuItem1
-            // 
-            inscriçãoToolStripMenuItem1.Name = "inscriçãoToolStripMenuItem1";
-            inscriçãoToolStripMenuItem1.Size = new Size(180, 22);
-            inscriçãoToolStripMenuItem1.Text = "Inscrição";
-            // 
-            // inscriçãoToolStripMenuItem
-            // 
-            inscriçãoToolStripMenuItem.Name = "inscriçãoToolStripMenuItem";
-            inscriçãoToolStripMenuItem.Size = new Size(66, 20);
-            inscriçãoToolStripMenuItem.Text = "&Inscrição";
-            // 
-            // relatóriosToolStripMenuItem
-            // 
-            relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            relatóriosToolStripMenuItem.Size = new Size(71, 20);
-            relatóriosToolStripMenuItem.Text = "&Relatórios";
-            // 
-            // sairToolStripMenuItem
-            // 
-            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            sairToolStripMenuItem.Size = new Size(38, 20);
-            sairToolStripMenuItem.Text = "Sair";
-            sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
-            // 
-            // btnCadastroPalestrante
-            // 
-            btnCadastroPalestrante.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            btnCadastroPalestrante.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnCadastroPalestrante.BackColor = SystemColors.ButtonFace;
-            btnCadastroPalestrante.Cursor = Cursors.Hand;
-            btnCadastroPalestrante.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnCadastroPalestrante.Depth = 0;
-            btnCadastroPalestrante.ForeColor = SystemColors.ControlText;
-            btnCadastroPalestrante.HighEmphasis = true;
-            btnCadastroPalestrante.Icon = null;
-            btnCadastroPalestrante.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnCadastroPalestrante.Location = new Point(55, 436);
-            btnCadastroPalestrante.Margin = new Padding(4, 6, 4, 6);
-            btnCadastroPalestrante.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            btnCadastroPalestrante.Name = "btnCadastroPalestrante";
-            btnCadastroPalestrante.NoAccentTextColor = Color.Empty;
-            btnCadastroPalestrante.Size = new Size(209, 36);
-            btnCadastroPalestrante.TabIndex = 11;
-            btnCadastroPalestrante.Text = "Cadastrar Palestrante";
-            btnCadastroPalestrante.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnCadastroPalestrante.UseAccentColor = true;
-            btnCadastroPalestrante.UseVisualStyleBackColor = false;
-            // 
-            // btnCadastroParticipante
-            // 
-            btnCadastroParticipante.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            btnCadastroParticipante.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnCadastroParticipante.Cursor = Cursors.Hand;
-            btnCadastroParticipante.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnCadastroParticipante.Depth = 0;
-            btnCadastroParticipante.HighEmphasis = true;
-            btnCadastroParticipante.Icon = null;
-            btnCadastroParticipante.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnCadastroParticipante.Location = new Point(357, 436);
-            btnCadastroParticipante.Margin = new Padding(4, 6, 4, 6);
-            btnCadastroParticipante.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            btnCadastroParticipante.Name = "btnCadastroParticipante";
-            btnCadastroParticipante.NoAccentTextColor = Color.Empty;
-            btnCadastroParticipante.Size = new Size(212, 36);
-            btnCadastroParticipante.TabIndex = 12;
-            btnCadastroParticipante.Text = "Cadastrar Participante";
-            btnCadastroParticipante.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnCadastroParticipante.UseAccentColor = false;
-            btnCadastroParticipante.UseVisualStyleBackColor = true;
-            btnCadastroParticipante.Click += btnCadastroParticipante_Click;
+            this.eventosToolStripMenuItem.Name = "eventosToolStripMenuItem";
+            this.eventosToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.eventosToolStripMenuItem.Text = "&Eventos";
+            this.eventosToolStripMenuItem.Click += new System.EventHandler(this.eventosToolStripMenuItem_Click_1);
             // 
             // toolStripSeparator3
             // 
-            toolStripSeparator3.Name = "toolStripSeparator3";
-            toolStripSeparator3.Size = new Size(177, 6);
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(139, 6);
+            // 
+            // palestrantesToolStripMenuItem
+            // 
+            this.palestrantesToolStripMenuItem.Name = "palestrantesToolStripMenuItem";
+            this.palestrantesToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.palestrantesToolStripMenuItem.Text = "&Palestrantes";
+            this.palestrantesToolStripMenuItem.Click += new System.EventHandler(this.palestrantesToolStripMenuItem_Click_1);
+            // 
+            // participantesToolStripMenuItem
+            // 
+            this.participantesToolStripMenuItem.Name = "participantesToolStripMenuItem";
+            this.participantesToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.participantesToolStripMenuItem.Text = "&Participantes";
+            this.participantesToolStripMenuItem.Click += new System.EventHandler(this.participantesToolStripMenuItem_Click_1);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(139, 6);
+            // 
+            // cidadeToolStripMenuItem
+            // 
+            this.cidadeToolStripMenuItem.Name = "cidadeToolStripMenuItem";
+            this.cidadeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.cidadeToolStripMenuItem.Text = "&Cidades";
+            this.cidadeToolStripMenuItem.Click += new System.EventHandler(this.cidadeToolStripMenuItem_Click_1);
+            // 
+            // inscriçãoToolStripMenuItem1
+            // 
+            this.inscriçãoToolStripMenuItem1.Name = "inscriçãoToolStripMenuItem1";
+            this.inscriçãoToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
+            this.inscriçãoToolStripMenuItem1.Text = "Inscrição";
+            // 
+            // inscriçãoToolStripMenuItem
+            // 
+            this.inscriçãoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.participanteToolStripMenuItem,
+            this.palestranteToolStripMenuItem});
+            this.inscriçãoToolStripMenuItem.Name = "inscriçãoToolStripMenuItem";
+            this.inscriçãoToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.inscriçãoToolStripMenuItem.Text = "&Inscrição";
+            // 
+            // participanteToolStripMenuItem
+            // 
+            this.participanteToolStripMenuItem.Name = "participanteToolStripMenuItem";
+            this.participanteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.participanteToolStripMenuItem.Text = "Participante";
+            this.participanteToolStripMenuItem.Click += new System.EventHandler(this.participanteToolStripMenuItem_Click);
+            // 
+            // palestranteToolStripMenuItem
+            // 
+            this.palestranteToolStripMenuItem.Name = "palestranteToolStripMenuItem";
+            this.palestranteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.palestranteToolStripMenuItem.Text = "Palestrante";
+            this.palestranteToolStripMenuItem.Click += new System.EventHandler(this.palestranteToolStripMenuItem_Click);
+            // 
+            // relatóriosToolStripMenuItem
+            // 
+            this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.relatóriosToolStripMenuItem.Text = "&Relatórios";
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click_1);
             // 
             // FormPrincipal
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(634, 557);
-            Controls.Add(btnCadastroParticipante);
-            Controls.Add(btnCadastroPalestrante);
-            Controls.Add(menuStrip1);
-            IsMdiContainer = true;
-            MainMenuStrip = menuStrip1;
-            Name = "FormPrincipal";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Gerenciamento de Eventos";
-            FormClosing += FormPrincipal_FormClosing;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(634, 557);
+            this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "FormPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Gerenciamento de Eventos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormPrincipal_FormClosing_1);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -205,8 +185,8 @@
         private ToolStripMenuItem cidadeToolStripMenuItem;
         private ToolStripMenuItem sairToolStripMenuItem;
         private ToolStripMenuItem inscriçãoToolStripMenuItem1;
-        private ReaLTaiizor.Controls.MaterialButton btnCadastroPalestrante;
-        private ReaLTaiizor.Controls.MaterialButton btnCadastroParticipante;
         private ToolStripSeparator toolStripSeparator3;
+        private ToolStripMenuItem participanteToolStripMenuItem;
+        private ToolStripMenuItem palestranteToolStripMenuItem;
     }
 }

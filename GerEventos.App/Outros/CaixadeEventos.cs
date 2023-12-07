@@ -13,6 +13,7 @@ namespace GerEventos.App.Outros
     public partial class CaixadeEventos : UserControl
     {
         private string nomeEvento;
+        private int idEvento;
         private DateTime dataEvento;
         public CaixadeEventos()
         {

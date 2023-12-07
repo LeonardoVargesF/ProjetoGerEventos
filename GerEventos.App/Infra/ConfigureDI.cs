@@ -43,21 +43,23 @@ namespace GerEventos.App.Infra
             Services.AddScoped<IBaseRepository<EventoPalestrante>, BaseRepository<EventoPalestrante>>();
             Services.AddScoped<IBaseRepository<Palestrante>, BaseRepository<Palestrante>>();
             Services.AddScoped<IBaseRepository<Participante>, BaseRepository<Participante>>();
-
+            Services.AddScoped<IBaseRepository<EventoInscricao>, BaseRepository<EventoInscricao>>();
             // Services
             Services.AddScoped<IBaseService<Evento>, BaseService<Evento>>();
             Services.AddScoped<IBaseService<Cidade>, BaseService<Cidade>>();
             Services.AddScoped<IBaseService<EventoPalestrante>, BaseService<EventoPalestrante>>();
             Services.AddScoped<IBaseService<Palestrante>, BaseService<Palestrante>>();
             Services.AddScoped<IBaseService<Participante>, BaseService<Participante>>();
+            Services.AddScoped<IBaseService<EventoInscricao>, BaseService<EventoInscricao>>();
 
             // Formulários
-            
+
             Services.AddTransient<CadastroEvento, CadastroEvento>();
             Services.AddTransient<CadastroPalestrante, CadastroPalestrante>();
             Services.AddTransient<CadastroParticipante, CadastroParticipante>();
             Services.AddTransient<CadastroCidade, CadastroCidade>();
             Services.AddTransient<CadastroInscricao, CadastroInscricao>();
+            Services.AddTransient<CadastroPalestranteEvento, CadastroPalestranteEvento>();
 
             // Mapping
             Services.AddSingleton(new MapperConfiguration(config =>

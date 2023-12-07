@@ -21,19 +21,19 @@ using System.Xml.Linq;
 
 namespace GerEventos.App.Cadastros
 {
-    public partial class CadastroInscricao : MaterialForm
+    public partial class CadastroPalestranteEvento : MaterialForm
     {
-        private readonly IBaseService<Participante> _participanteService;
-        private readonly IBaseService<EventoInscricao> _eventoinscricaoService;
+        private readonly IBaseService<Palestrante> _palestranteService;
+        private readonly IBaseService<EventoPalestrante> _eventopalestranteService;
         private readonly IBaseService<Evento> _eventoService;
 
         protected bool IsAlteracao = false;
 
-        public CadastroInscricao(IBaseService<Participante> participanteService, IBaseService<Evento> eventoService, IBaseService<EventoInscricao> eventoinscricaoService)
+        public CadastroPalestranteEvento(IBaseService<Palestrante> palestranteService, IBaseService<Evento> eventoService, IBaseService<EventoPalestrante> eventopalestranteService)
         {
-            _participanteService = participanteService;
+            _palestranteService = palestranteService;
             _eventoService = eventoService;
-            _eventoinscricaoService = eventoinscricaoService;
+            _eventopalestranteService = eventopalestranteService;
             InitializeComponent();
             CarregarCombo();
             CarregaEventos();
@@ -58,33 +58,37 @@ namespace GerEventos.App.Cadastros
 
         private void btn_inscrever_Click(object? sender, EventArgs e)
         {
+            int.TryParse(txtDuracao.Text, out var duracao);
 
-            int.TryParse(cboParticipantes.SelectedValue.ToString(), out var idGrupo);
-            var participante = _participanteService.GetById<Participante>(idGrupo);
+            int.TryParse(cboPalestrantes.SelectedValue.ToString(), out var idGrupo);
+            var palestrante = _palestranteService.GetById<Palestrante>(idGrupo);
 
             int.TryParse(((MaterialButton)sender).Tag.ToString(), out var id);
 
-            var inscricao = new EventoInscricao()
+            var inscricao = new EventoPalestrante()
             {
-                DataInscricao = DateTime.Now,
-                Evento = new Evento() {Id = id},
-                Participante = participante
-        };
-            _eventoinscricaoService.Add<EventoInscricao, EventoInscricao, EventoInscricaoValidator>(inscricao);
+                TituloPalestra = txtTitulo.Text,
+                TempoDuracao = duracao,
+                Evento = new Evento() { Id = id },
+                Palestrante = palestrante,
+
+            };
+            _eventopalestranteService.Add<EventoPalestrante, EventoPalestrante, EventoPalestranteValidator>(inscricao);
 
         }
 
         private void btn_cancelar_Click(object? sender, EventArgs e)
         {
-            
+
         }
 
 
         private void CarregarCombo()
         {
-            cboParticipantes.ValueMember = "Id";
-            cboParticipantes.DisplayMember = "Nome";
-            cboParticipantes.DataSource = _participanteService.Get<ParticipanteModel>().ToList();
+            cboPalestrantes.ValueMember = "Id";
+            cboPalestrantes.DisplayMember = "Nome";
+            cboPalestrantes.DataSource = _palestranteService.Get<PalestranteModel>().ToList();
         }
     }
 }
+

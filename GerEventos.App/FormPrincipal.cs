@@ -15,22 +15,22 @@ namespace GerEventos.App
         }
 
 
-        private void cidadeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void cidadeToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             Exibeformulario<CadastroCidade>();
         }
 
-        private void eventosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void eventosToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             Exibeformulario<CadastroEvento>();
         }
 
-        private void palestrantesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void palestrantesToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             Exibeformulario<CadastroPalestrante>();
         }
 
-        private void participantesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void participantesToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             Exibeformulario<CadastroParticipante>();
         }
@@ -45,12 +45,7 @@ namespace GerEventos.App
             }
         }
 
-        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        private void FormPrincipal_FormClosing_1(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.ApplicationExitCall)
             {
@@ -58,9 +53,20 @@ namespace GerEventos.App
             }
         }
 
-        private void btnCadastroParticipante_Click(object sender, EventArgs e)
+        private void participanteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Exibeformulario<CadastroInscricao>();
         }
+
+        private void palestranteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Exibeformulario<CadastroPalestranteEvento>();
+        }
+
+        private void sairToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Close();
+        }
+   
     }
 }

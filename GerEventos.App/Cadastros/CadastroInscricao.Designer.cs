@@ -28,127 +28,128 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cboParticipante = new ReaLTaiizor.Controls.MaterialComboBox();
-            txtId = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            flowLayoutEventos = new FlowLayoutPanel();
-            cboParticipantes = new ReaLTaiizor.Controls.MaterialComboBox();
-            label1 = new Label();
-            SuspendLayout();
+            this.cboParticipante = new ReaLTaiizor.Controls.MaterialComboBox();
+            this.txtId = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutEventos = new System.Windows.Forms.FlowLayoutPanel();
+            this.cboParticipantes = new ReaLTaiizor.Controls.MaterialComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // cboParticipante
             // 
-            cboParticipante.AutoResize = false;
-            cboParticipante.BackColor = Color.FromArgb(255, 255, 255);
-            cboParticipante.Depth = 0;
-            cboParticipante.DrawMode = DrawMode.OwnerDrawVariable;
-            cboParticipante.DropDownHeight = 174;
-            cboParticipante.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboParticipante.DropDownWidth = 121;
-            cboParticipante.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel);
-            cboParticipante.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            cboParticipante.FormattingEnabled = true;
-            cboParticipante.Hint = "Participante";
-            cboParticipante.IntegralHeight = false;
-            cboParticipante.ItemHeight = 43;
-            cboParticipante.Location = new Point(7, 6);
-            cboParticipante.MaxDropDownItems = 4;
-            cboParticipante.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            cboParticipante.Name = "cboParticipante";
-            cboParticipante.Size = new Size(409, 49);
-            cboParticipante.StartIndex = 0;
-            cboParticipante.TabIndex = 2;
+            this.cboParticipante.AutoResize = false;
+            this.cboParticipante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboParticipante.Depth = 0;
+            this.cboParticipante.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboParticipante.DropDownHeight = 174;
+            this.cboParticipante.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboParticipante.DropDownWidth = 121;
+            this.cboParticipante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboParticipante.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboParticipante.FormattingEnabled = true;
+            this.cboParticipante.Hint = "Participante";
+            this.cboParticipante.IntegralHeight = false;
+            this.cboParticipante.ItemHeight = 43;
+            this.cboParticipante.Location = new System.Drawing.Point(7, 6);
+            this.cboParticipante.MaxDropDownItems = 4;
+            this.cboParticipante.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.cboParticipante.Name = "cboParticipante";
+            this.cboParticipante.Size = new System.Drawing.Size(409, 49);
+            this.cboParticipante.StartIndex = 0;
+            this.cboParticipante.TabIndex = 2;
             // 
             // txtId
             // 
-            txtId.AnimateReadOnly = false;
-            txtId.AutoCompleteMode = AutoCompleteMode.None;
-            txtId.AutoCompleteSource = AutoCompleteSource.None;
-            txtId.BackgroundImageLayout = ImageLayout.None;
-            txtId.CharacterCasing = CharacterCasing.Normal;
-            txtId.Depth = 0;
-            txtId.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtId.HideSelection = true;
-            txtId.Hint = "Id";
-            txtId.LeadingIcon = null;
-            txtId.Location = new Point(422, 8);
-            txtId.MaxLength = 32767;
-            txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtId.Name = "txtId";
-            txtId.PasswordChar = '\0';
-            txtId.PrefixSuffixText = null;
-            txtId.ReadOnly = true;
-            txtId.RightToLeft = RightToLeft.No;
-            txtId.SelectedText = "";
-            txtId.SelectionLength = 0;
-            txtId.SelectionStart = 0;
-            txtId.ShortcutsEnabled = true;
-            txtId.Size = new Size(124, 48);
-            txtId.TabIndex = 5;
-            txtId.TabStop = false;
-            txtId.TextAlign = HorizontalAlignment.Left;
-            txtId.TrailingIcon = null;
-            txtId.UseSystemPasswordChar = false;
+            this.txtId.AnimateReadOnly = false;
+            this.txtId.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtId.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtId.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtId.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtId.Depth = 0;
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtId.HideSelection = true;
+            this.txtId.Hint = "Id";
+            this.txtId.LeadingIcon = null;
+            this.txtId.Location = new System.Drawing.Point(422, 8);
+            this.txtId.MaxLength = 32767;
+            this.txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.txtId.Name = "txtId";
+            this.txtId.PasswordChar = '\0';
+            this.txtId.PrefixSuffixText = null;
+            this.txtId.ReadOnly = true;
+            this.txtId.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtId.SelectedText = "";
+            this.txtId.SelectionLength = 0;
+            this.txtId.SelectionStart = 0;
+            this.txtId.ShortcutsEnabled = true;
+            this.txtId.Size = new System.Drawing.Size(124, 48);
+            this.txtId.TabIndex = 5;
+            this.txtId.TabStop = false;
+            this.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtId.TrailingIcon = null;
+            this.txtId.UseSystemPasswordChar = false;
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.Location = new Point(3, 62);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(543, 233);
-            flowLayoutPanel1.TabIndex = 11;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 62);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(543, 233);
+            this.flowLayoutPanel1.TabIndex = 11;
             // 
             // flowLayoutEventos
             // 
-            flowLayoutEventos.AutoScroll = true;
-            flowLayoutEventos.Location = new Point(6, 150);
-            flowLayoutEventos.Name = "flowLayoutEventos";
-            flowLayoutEventos.Size = new Size(430, 295);
-            flowLayoutEventos.TabIndex = 0;
+            this.flowLayoutEventos.AutoScroll = true;
+            this.flowLayoutEventos.Location = new System.Drawing.Point(6, 150);
+            this.flowLayoutEventos.Name = "flowLayoutEventos";
+            this.flowLayoutEventos.Size = new System.Drawing.Size(430, 295);
+            this.flowLayoutEventos.TabIndex = 0;
             // 
             // cboParticipantes
             // 
-            cboParticipantes.AutoResize = false;
-            cboParticipantes.BackColor = Color.FromArgb(255, 255, 255);
-            cboParticipantes.Depth = 0;
-            cboParticipantes.DrawMode = DrawMode.OwnerDrawVariable;
-            cboParticipantes.DropDownHeight = 174;
-            cboParticipantes.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboParticipantes.DropDownWidth = 121;
-            cboParticipantes.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel);
-            cboParticipantes.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            cboParticipantes.FormattingEnabled = true;
-            cboParticipantes.IntegralHeight = false;
-            cboParticipantes.ItemHeight = 43;
-            cboParticipantes.Location = new Point(120, 95);
-            cboParticipantes.MaxDropDownItems = 4;
-            cboParticipantes.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            cboParticipantes.Name = "cboParticipantes";
-            cboParticipantes.Size = new Size(205, 49);
-            cboParticipantes.StartIndex = 0;
-            cboParticipantes.TabIndex = 1;
+            this.cboParticipantes.AutoResize = false;
+            this.cboParticipantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboParticipantes.Depth = 0;
+            this.cboParticipantes.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboParticipantes.DropDownHeight = 174;
+            this.cboParticipantes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboParticipantes.DropDownWidth = 121;
+            this.cboParticipantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboParticipantes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboParticipantes.FormattingEnabled = true;
+            this.cboParticipantes.IntegralHeight = false;
+            this.cboParticipantes.ItemHeight = 43;
+            this.cboParticipantes.Location = new System.Drawing.Point(120, 95);
+            this.cboParticipantes.MaxDropDownItems = 4;
+            this.cboParticipantes.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.cboParticipantes.Name = "cboParticipantes";
+            this.cboParticipantes.Size = new System.Drawing.Size(205, 49);
+            this.cboParticipantes.StartIndex = 0;
+            this.cboParticipantes.TabIndex = 1;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(120, 77);
-            label1.Name = "label1";
-            label1.Size = new Size(215, 15);
-            label1.TabIndex = 2;
-            label1.Text = "Selecione o Participante para Cadastrar!";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(120, 77);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(212, 15);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Selecione o Participante para Inscrição!";
             // 
             // CadastroInscricao
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Control;
-            ClientSize = new Size(442, 451);
-            Controls.Add(label1);
-            Controls.Add(cboParticipantes);
-            Controls.Add(flowLayoutEventos);
-            Name = "CadastroInscricao";
-            Text = "Inscrição de Participante";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(442, 451);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cboParticipantes);
+            this.Controls.Add(this.flowLayoutEventos);
+            this.Name = "CadastroInscricao";
+            this.Text = "Inscrição de Participante";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
