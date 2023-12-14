@@ -61,10 +61,6 @@
             tabPageCadastro.Controls.SetChildIndex(txtEndereco, 0);
             tabPageCadastro.Controls.SetChildIndex(txtTempoDuracao, 0);
             // 
-            // tabPageConsulta
-            // 
-            tabPageConsulta.Size = new Size(536, 396);
-            // 
             // txtNome
             // 
             txtNome.AnimateReadOnly = false;
@@ -90,7 +86,7 @@
             txtNome.SelectionStart = 0;
             txtNome.ShortcutsEnabled = true;
             txtNome.Size = new Size(364, 48);
-            txtNome.TabIndex = 2;
+            txtNome.TabIndex = 0;
             txtNome.TabStop = false;
             txtNome.TextAlign = HorizontalAlignment.Left;
             txtNome.TrailingIcon = null;
@@ -218,7 +214,7 @@
             txtDescricao.SelectionStart = 0;
             txtDescricao.ShortcutsEnabled = true;
             txtDescricao.Size = new Size(219, 48);
-            txtDescricao.TabIndex = 6;
+            txtDescricao.TabIndex = 1;
             txtDescricao.TabStop = false;
             txtDescricao.TextAlign = HorizontalAlignment.Left;
             txtDescricao.TrailingIcon = null;
@@ -249,7 +245,7 @@
             txtEndereco.SelectionStart = 0;
             txtEndereco.ShortcutsEnabled = true;
             txtEndereco.Size = new Size(456, 48);
-            txtEndereco.TabIndex = 11;
+            txtEndereco.TabIndex = 5;
             txtEndereco.TabStop = false;
             txtEndereco.TextAlign = HorizontalAlignment.Left;
             txtEndereco.TrailingIcon = null;
@@ -280,7 +276,7 @@
             txtTempoDuracao.SelectionStart = 0;
             txtTempoDuracao.ShortcutsEnabled = true;
             txtTempoDuracao.Size = new Size(230, 48);
-            txtTempoDuracao.TabIndex = 12;
+            txtTempoDuracao.TabIndex = 2;
             txtTempoDuracao.TabStop = false;
             txtTempoDuracao.TextAlign = HorizontalAlignment.Left;
             txtTempoDuracao.TrailingIcon = null;
@@ -291,6 +287,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(485, 378);
+            ForeColor = SystemColors.ControlLightLight;
             Location = new Point(0, 0);
             Name = "CadastroEvento";
             Text = "Cadastro de Evento";

@@ -49,6 +49,7 @@ namespace GerEventos.App.Cadastros
                 even.lblDataEvento.Text = evento.DataEvento.ToString("dd/MM/yyyy HH:mm:ss");
                 even.lblIdEvento.Text = evento.Id.ToString();
                 even.btnInscrever.Tag = evento.Id.ToString();
+                even.btnCancelarInsc.Tag = evento.Id.ToString();
                 even.btnInscrever.Click += btn_inscrever_Click;
                 even.btnCancelarInsc.Click += btn_cancelar_Click;
 
@@ -58,25 +59,76 @@ namespace GerEventos.App.Cadastros
 
         private void btn_inscrever_Click(object? sender, EventArgs e)
         {
+            int.TryParse(cboParticipantes.SelectedValue.ToString(), out var idParticipante);
+            var participante = _participanteService.GetById<Participante>(idParticipante);
+            int.TryParse(((MaterialButton)sender).Tag.ToString(), out var idEvento);
 
-            int.TryParse(cboParticipantes.SelectedValue.ToString(), out var idGrupo);
-            var participante = _participanteService.GetById<Participante>(idGrupo);
+            bool taCadastrado = false;
 
-            int.TryParse(((MaterialButton)sender).Tag.ToString(), out var id);
-
-            var inscricao = new EventoInscricao()
+            var insceventos = _eventoinscricaoService.Get<EventoInscricao>(new List<string>() { "Evento", "Participante" });
+            foreach (var inscevento in insceventos)
             {
-                DataInscricao = DateTime.Now,
-                Evento = new Evento() {Id = id},
-                Participante = participante
-        };
-            _eventoinscricaoService.Add<EventoInscricao, EventoInscricao, EventoInscricaoValidator>(inscricao);
+                if (inscevento.Participante.Id == idParticipante && inscevento.Evento.Id == idEvento)
+                {
+                    taCadastrado = true;
+                }
+            }
 
+            if (!taCadastrado)
+            {
+                try
+                {
+                    var inscricao = new EventoInscricao()
+                    {
+                        DataInscricao = DateTime.Now,
+                        Evento = new Evento() { Id = idEvento },
+                        Participante = participante
+                    };
+                    _eventoinscricaoService.Add<EventoInscricao, EventoInscricao, EventoInscricaoValidator>(inscricao);
+                    MessageBox.Show(@"Cadastro Realizado!", @"GEREVENTOS", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, @"GEREVENTOS", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show(@"Você ja está cadastrado nesse evento!", @"GEREVENTOS", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+            }
+
+            
         }
+
 
         private void btn_cancelar_Click(object? sender, EventArgs e)
         {
-            
+            int.TryParse(cboParticipantes.SelectedValue.ToString(), out var idParticipante);
+            var participante = _participanteService.GetById<Participante>(idParticipante);
+            int.TryParse(((MaterialButton)sender).Tag.ToString(), out var idEvento);
+
+            bool taCadastrado = false;
+
+            var insceventos = _eventoinscricaoService.Get<EventoInscricao>(new List<string>() { "Evento", "Participante" });
+            foreach (var inscevento in insceventos)
+            {
+                if (inscevento.Participante.Id == idParticipante && inscevento.Evento.Id == idEvento)
+                {
+                    taCadastrado = true;
+                    _eventoinscricaoService.Delete(inscevento.Id);
+                    MessageBox.Show(@"Você cancelou seu cadastro nesse evento!", @"GEREVENTOS", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                }
+            }
+
+            if (!taCadastrado)
+            {
+                MessageBox.Show(@"Você não esta cadastrado nesse evento!", @"GEREVENTOS", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+
         }
 
 

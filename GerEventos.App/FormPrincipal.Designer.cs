@@ -28,148 +28,137 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eventosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.palestrantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.participantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.cidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inscriçãoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.inscriçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.participanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.palestranteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
-            this.SuspendLayout();
+            menuStrip1 = new MenuStrip();
+            cadastroToolStripMenuItem = new ToolStripMenuItem();
+            eventosToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparator3 = new ToolStripSeparator();
+            palestrantesToolStripMenuItem = new ToolStripMenuItem();
+            participantesToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparator2 = new ToolStripSeparator();
+            cidadeToolStripMenuItem = new ToolStripMenuItem();
+            inscriçãoToolStripMenuItem1 = new ToolStripMenuItem();
+            inscriçãoToolStripMenuItem = new ToolStripMenuItem();
+            participanteToolStripMenuItem = new ToolStripMenuItem();
+            palestranteToolStripMenuItem = new ToolStripMenuItem();
+            inscriçõesToolStripMenuItem = new ToolStripMenuItem();
+            sairToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroToolStripMenuItem,
-            this.inscriçãoToolStripMenuItem,
-            this.relatóriosToolStripMenuItem,
-            this.sairToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(3, 64);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(628, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.Items.AddRange(new ToolStripItem[] { cadastroToolStripMenuItem, inscriçãoToolStripMenuItem, sairToolStripMenuItem });
+            menuStrip1.Location = new Point(3, 64);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(999, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
             // 
             // cadastroToolStripMenuItem
             // 
-            this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.eventosToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.palestrantesToolStripMenuItem,
-            this.participantesToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.cidadeToolStripMenuItem,
-            this.inscriçãoToolStripMenuItem1});
-            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.cadastroToolStripMenuItem.Text = "&Cadastros";
+            cadastroToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { eventosToolStripMenuItem, toolStripSeparator3, palestrantesToolStripMenuItem, participantesToolStripMenuItem, toolStripSeparator2, cidadeToolStripMenuItem, inscriçãoToolStripMenuItem1 });
+            cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
+            cadastroToolStripMenuItem.Size = new Size(71, 20);
+            cadastroToolStripMenuItem.Text = "&Cadastros";
             // 
             // eventosToolStripMenuItem
             // 
-            this.eventosToolStripMenuItem.Name = "eventosToolStripMenuItem";
-            this.eventosToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.eventosToolStripMenuItem.Text = "&Eventos";
-            this.eventosToolStripMenuItem.Click += new System.EventHandler(this.eventosToolStripMenuItem_Click_1);
+            eventosToolStripMenuItem.Name = "eventosToolStripMenuItem";
+            eventosToolStripMenuItem.Size = new Size(142, 22);
+            eventosToolStripMenuItem.Text = "&Eventos";
+            eventosToolStripMenuItem.Click += eventosToolStripMenuItem_Click_1;
             // 
             // toolStripSeparator3
             // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(139, 6);
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new Size(139, 6);
             // 
             // palestrantesToolStripMenuItem
             // 
-            this.palestrantesToolStripMenuItem.Name = "palestrantesToolStripMenuItem";
-            this.palestrantesToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.palestrantesToolStripMenuItem.Text = "&Palestrantes";
-            this.palestrantesToolStripMenuItem.Click += new System.EventHandler(this.palestrantesToolStripMenuItem_Click_1);
+            palestrantesToolStripMenuItem.Name = "palestrantesToolStripMenuItem";
+            palestrantesToolStripMenuItem.Size = new Size(142, 22);
+            palestrantesToolStripMenuItem.Text = "&Palestrantes";
+            palestrantesToolStripMenuItem.Click += palestrantesToolStripMenuItem_Click_1;
             // 
             // participantesToolStripMenuItem
             // 
-            this.participantesToolStripMenuItem.Name = "participantesToolStripMenuItem";
-            this.participantesToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.participantesToolStripMenuItem.Text = "&Participantes";
-            this.participantesToolStripMenuItem.Click += new System.EventHandler(this.participantesToolStripMenuItem_Click_1);
+            participantesToolStripMenuItem.Name = "participantesToolStripMenuItem";
+            participantesToolStripMenuItem.Size = new Size(142, 22);
+            participantesToolStripMenuItem.Text = "&Participantes";
+            participantesToolStripMenuItem.Click += participantesToolStripMenuItem_Click_1;
             // 
             // toolStripSeparator2
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(139, 6);
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new Size(139, 6);
             // 
             // cidadeToolStripMenuItem
             // 
-            this.cidadeToolStripMenuItem.Name = "cidadeToolStripMenuItem";
-            this.cidadeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.cidadeToolStripMenuItem.Text = "&Cidades";
-            this.cidadeToolStripMenuItem.Click += new System.EventHandler(this.cidadeToolStripMenuItem_Click_1);
+            cidadeToolStripMenuItem.Name = "cidadeToolStripMenuItem";
+            cidadeToolStripMenuItem.Size = new Size(142, 22);
+            cidadeToolStripMenuItem.Text = "&Cidades";
+            cidadeToolStripMenuItem.Click += cidadeToolStripMenuItem_Click_1;
             // 
             // inscriçãoToolStripMenuItem1
             // 
-            this.inscriçãoToolStripMenuItem1.Name = "inscriçãoToolStripMenuItem1";
-            this.inscriçãoToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
-            this.inscriçãoToolStripMenuItem1.Text = "Inscrição";
+            inscriçãoToolStripMenuItem1.Name = "inscriçãoToolStripMenuItem1";
+            inscriçãoToolStripMenuItem1.Size = new Size(142, 22);
+            inscriçãoToolStripMenuItem1.Text = "Inscrição";
             // 
             // inscriçãoToolStripMenuItem
             // 
-            this.inscriçãoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.participanteToolStripMenuItem,
-            this.palestranteToolStripMenuItem});
-            this.inscriçãoToolStripMenuItem.Name = "inscriçãoToolStripMenuItem";
-            this.inscriçãoToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.inscriçãoToolStripMenuItem.Text = "&Inscrição";
+            inscriçãoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { participanteToolStripMenuItem, palestranteToolStripMenuItem, inscriçõesToolStripMenuItem });
+            inscriçãoToolStripMenuItem.Name = "inscriçãoToolStripMenuItem";
+            inscriçãoToolStripMenuItem.Size = new Size(66, 20);
+            inscriçãoToolStripMenuItem.Text = "&Inscrição";
             // 
             // participanteToolStripMenuItem
             // 
-            this.participanteToolStripMenuItem.Name = "participanteToolStripMenuItem";
-            this.participanteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.participanteToolStripMenuItem.Text = "Participante";
-            this.participanteToolStripMenuItem.Click += new System.EventHandler(this.participanteToolStripMenuItem_Click);
+            participanteToolStripMenuItem.Name = "participanteToolStripMenuItem";
+            participanteToolStripMenuItem.Size = new Size(137, 22);
+            participanteToolStripMenuItem.Text = "Participante";
+            participanteToolStripMenuItem.Click += participanteToolStripMenuItem_Click;
             // 
             // palestranteToolStripMenuItem
             // 
-            this.palestranteToolStripMenuItem.Name = "palestranteToolStripMenuItem";
-            this.palestranteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.palestranteToolStripMenuItem.Text = "Palestrante";
-            this.palestranteToolStripMenuItem.Click += new System.EventHandler(this.palestranteToolStripMenuItem_Click);
+            palestranteToolStripMenuItem.Name = "palestranteToolStripMenuItem";
+            palestranteToolStripMenuItem.Size = new Size(137, 22);
+            palestranteToolStripMenuItem.Text = "Palestrante";
+            palestranteToolStripMenuItem.Click += palestranteToolStripMenuItem_Click;
             // 
-            // relatóriosToolStripMenuItem
+            // inscriçõesToolStripMenuItem
             // 
-            this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.relatóriosToolStripMenuItem.Text = "&Relatórios";
+            inscriçõesToolStripMenuItem.Name = "inscriçõesToolStripMenuItem";
+            inscriçõesToolStripMenuItem.Size = new Size(137, 22);
+            inscriçõesToolStripMenuItem.Text = "Inscrições";
+            inscriçõesToolStripMenuItem.Click += inscriçõesToolStripMenuItem_Click;
             // 
             // sairToolStripMenuItem
             // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
-            this.sairToolStripMenuItem.Text = "Sair";
-            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click_1);
+            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            sairToolStripMenuItem.Size = new Size(38, 20);
+            sairToolStripMenuItem.Text = "Sair";
+            sairToolStripMenuItem.Click += sairToolStripMenuItem_Click_1;
             // 
             // FormPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(634, 557);
-            this.Controls.Add(this.menuStrip1);
-            this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "FormPrincipal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gerenciamento de Eventos";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormPrincipal_FormClosing_1);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(64, 64, 64);
+            BackgroundImage = Properties.Resources.Leonardo_Eventos;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1005, 591);
+            Controls.Add(menuStrip1);
+            IsMdiContainer = true;
+            MainMenuStrip = menuStrip1;
+            Name = "FormPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Gerenciamento de Eventos";
+            FormClosing += FormPrincipal_FormClosing_1;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -180,7 +169,6 @@
         private ToolStripMenuItem palestrantesToolStripMenuItem;
         private ToolStripMenuItem participantesToolStripMenuItem;
         private ToolStripMenuItem inscriçãoToolStripMenuItem;
-        private ToolStripMenuItem relatóriosToolStripMenuItem;
         private ToolStripSeparator toolStripSeparator2;
         private ToolStripMenuItem cidadeToolStripMenuItem;
         private ToolStripMenuItem sairToolStripMenuItem;
@@ -188,5 +176,6 @@
         private ToolStripSeparator toolStripSeparator3;
         private ToolStripMenuItem participanteToolStripMenuItem;
         private ToolStripMenuItem palestranteToolStripMenuItem;
+        private ToolStripMenuItem inscriçõesToolStripMenuItem;
     }
 }

@@ -59,5 +59,45 @@ namespace GerEventos.App.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _11_dicas_essenciais_para_organizar_um_workshop {
+            get {
+                object obj = ResourceManager.GetObject("11-dicas-essenciais-para-organizar-um-workshop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _17_imagens_de_destaque_guia_de_planejamento_de_eventos {
+            get {
+                object obj = ResourceManager.GetObject("17-imagens-de-destaque_guia-de-planejamento-de-eventos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Leonardo_Eventos {
+            get {
+                object obj = ResourceManager.GetObject("Leonardo Eventos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plano_de_fundo_texturizado_de_concreto_grunge_preto {
+            get {
+                object obj = ResourceManager.GetObject("plano-de-fundo-texturizado-de-concreto-grunge-preto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

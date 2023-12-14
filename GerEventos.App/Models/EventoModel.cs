@@ -27,7 +27,7 @@ namespace GerEventos.App.Models
         public DateTime DataInscricao { get; set; }
         public int IdEvento { get; set; }
         public string? Evento { get; set; }
-        public int idParticipante { get; set; }
+        public int IdParticipante { get; set; }
         public string? Participante { get; set; }
     }
 

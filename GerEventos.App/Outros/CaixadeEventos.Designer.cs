@@ -28,102 +28,102 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnInscrever = new ReaLTaiizor.Controls.MaterialButton();
-            this.lblNomeEvento = new System.Windows.Forms.Label();
-            this.btnCancelarInsc = new ReaLTaiizor.Controls.MaterialButton();
-            this.lblDataEvento = new System.Windows.Forms.Label();
-            this.lblIdEvento = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            btnInscrever = new ReaLTaiizor.Controls.MaterialButton();
+            lblNomeEvento = new Label();
+            btnCancelarInsc = new ReaLTaiizor.Controls.MaterialButton();
+            lblDataEvento = new Label();
+            lblIdEvento = new Label();
+            SuspendLayout();
             // 
             // btnInscrever
             // 
-            this.btnInscrever.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnInscrever.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnInscrever.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInscrever.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnInscrever.Depth = 0;
-            this.btnInscrever.HighEmphasis = true;
-            this.btnInscrever.Icon = null;
-            this.btnInscrever.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.btnInscrever.Location = new System.Drawing.Point(301, 65);
-            this.btnInscrever.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnInscrever.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.btnInscrever.Name = "btnInscrever";
-            this.btnInscrever.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnInscrever.Size = new System.Drawing.Size(108, 36);
-            this.btnInscrever.TabIndex = 0;
-            this.btnInscrever.Text = "&Inscrever";
-            this.btnInscrever.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnInscrever.UseAccentColor = false;
-            this.btnInscrever.UseVisualStyleBackColor = true;
+            btnInscrever.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnInscrever.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnInscrever.Cursor = Cursors.Hand;
+            btnInscrever.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnInscrever.Depth = 0;
+            btnInscrever.HighEmphasis = true;
+            btnInscrever.Icon = null;
+            btnInscrever.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnInscrever.Location = new Point(299, 63);
+            btnInscrever.Margin = new Padding(4, 6, 4, 6);
+            btnInscrever.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnInscrever.Name = "btnInscrever";
+            btnInscrever.NoAccentTextColor = Color.Empty;
+            btnInscrever.Size = new Size(108, 36);
+            btnInscrever.TabIndex = 0;
+            btnInscrever.Text = "&Inscrever";
+            btnInscrever.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnInscrever.UseAccentColor = false;
+            btnInscrever.UseVisualStyleBackColor = true;
             // 
             // lblNomeEvento
             // 
-            this.lblNomeEvento.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNomeEvento.Location = new System.Drawing.Point(103, 0);
-            this.lblNomeEvento.Name = "lblNomeEvento";
-            this.lblNomeEvento.Size = new System.Drawing.Size(220, 40);
-            this.lblNomeEvento.TabIndex = 1;
-            this.lblNomeEvento.Text = "label1";
-            this.lblNomeEvento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblNomeEvento.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNomeEvento.Location = new Point(103, 0);
+            lblNomeEvento.Name = "lblNomeEvento";
+            lblNomeEvento.Size = new Size(220, 40);
+            lblNomeEvento.TabIndex = 1;
+            lblNomeEvento.Text = "label1";
+            lblNomeEvento.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnCancelarInsc
             // 
-            this.btnCancelarInsc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelarInsc.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnCancelarInsc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelarInsc.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnCancelarInsc.Depth = 0;
-            this.btnCancelarInsc.HighEmphasis = true;
-            this.btnCancelarInsc.Icon = null;
-            this.btnCancelarInsc.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.btnCancelarInsc.Location = new System.Drawing.Point(7, 65);
-            this.btnCancelarInsc.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnCancelarInsc.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            this.btnCancelarInsc.Name = "btnCancelarInsc";
-            this.btnCancelarInsc.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnCancelarInsc.Size = new System.Drawing.Size(105, 36);
-            this.btnCancelarInsc.TabIndex = 2;
-            this.btnCancelarInsc.Text = "&Cancelar";
-            this.btnCancelarInsc.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnCancelarInsc.UseAccentColor = true;
-            this.btnCancelarInsc.UseVisualStyleBackColor = true;
+            btnCancelarInsc.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnCancelarInsc.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnCancelarInsc.Cursor = Cursors.Hand;
+            btnCancelarInsc.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnCancelarInsc.Depth = 0;
+            btnCancelarInsc.HighEmphasis = true;
+            btnCancelarInsc.Icon = null;
+            btnCancelarInsc.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnCancelarInsc.Location = new Point(5, 63);
+            btnCancelarInsc.Margin = new Padding(4, 6, 4, 6);
+            btnCancelarInsc.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnCancelarInsc.Name = "btnCancelarInsc";
+            btnCancelarInsc.NoAccentTextColor = Color.Empty;
+            btnCancelarInsc.Size = new Size(105, 36);
+            btnCancelarInsc.TabIndex = 2;
+            btnCancelarInsc.Text = "&Cancelar";
+            btnCancelarInsc.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnCancelarInsc.UseAccentColor = true;
+            btnCancelarInsc.UseVisualStyleBackColor = true;
             // 
             // lblDataEvento
             // 
-            this.lblDataEvento.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDataEvento.Location = new System.Drawing.Point(131, 40);
-            this.lblDataEvento.Name = "lblDataEvento";
-            this.lblDataEvento.Size = new System.Drawing.Size(163, 39);
-            this.lblDataEvento.TabIndex = 3;
-            this.lblDataEvento.Text = "label1";
-            this.lblDataEvento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblDataEvento.Font = new Font("Arial Narrow", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblDataEvento.Location = new Point(131, 40);
+            lblDataEvento.Name = "lblDataEvento";
+            lblDataEvento.Size = new Size(163, 39);
+            lblDataEvento.TabIndex = 3;
+            lblDataEvento.Text = "label1";
+            lblDataEvento.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblIdEvento
             // 
-            this.lblIdEvento.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblIdEvento.Location = new System.Drawing.Point(0, 0);
-            this.lblIdEvento.Name = "lblIdEvento";
-            this.lblIdEvento.Size = new System.Drawing.Size(40, 39);
-            this.lblIdEvento.TabIndex = 4;
-            this.lblIdEvento.Text = "label1";
-            this.lblIdEvento.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            lblIdEvento.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblIdEvento.Location = new Point(0, 0);
+            lblIdEvento.Name = "lblIdEvento";
+            lblIdEvento.Size = new Size(40, 39);
+            lblIdEvento.TabIndex = 4;
+            lblIdEvento.Text = "label1";
+            lblIdEvento.TextAlign = ContentAlignment.BottomCenter;
             // 
             // CaixadeEventos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightBlue;
-            this.Controls.Add(this.lblIdEvento);
-            this.Controls.Add(this.lblDataEvento);
-            this.Controls.Add(this.btnCancelarInsc);
-            this.Controls.Add(this.lblNomeEvento);
-            this.Controls.Add(this.btnInscrever);
-            this.Name = "CaixadeEventos";
-            this.Size = new System.Drawing.Size(425, 107);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FloralWhite;
+            BorderStyle = BorderStyle.FixedSingle;
+            Controls.Add(lblIdEvento);
+            Controls.Add(lblDataEvento);
+            Controls.Add(btnCancelarInsc);
+            Controls.Add(lblNomeEvento);
+            Controls.Add(btnInscrever);
+            Name = "CaixadeEventos";
+            Size = new Size(423, 105);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

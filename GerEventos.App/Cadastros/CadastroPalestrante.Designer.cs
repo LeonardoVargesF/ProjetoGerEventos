@@ -61,10 +61,6 @@
             tabPageCadastro.Controls.SetChildIndex(txtEspecializacao, 0);
             tabPageCadastro.Controls.SetChildIndex(cboCidade, 0);
             // 
-            // tabPageConsulta
-            // 
-            tabPageConsulta.Size = new Size(536, 396);
-            // 
             // txtId
             // 
             txtId.AnimateReadOnly = false;
@@ -130,7 +126,7 @@
             txtTelefone.ShortcutsEnabled = true;
             txtTelefone.Size = new Size(171, 48);
             txtTelefone.SkipLiterals = true;
-            txtTelefone.TabIndex = 10;
+            txtTelefone.TabIndex = 3;
             txtTelefone.TabStop = false;
             txtTelefone.Text = "(  )      -";
             txtTelefone.TextAlign = HorizontalAlignment.Left;
@@ -155,7 +151,7 @@
             txtCPF.InsertKeyMode = InsertKeyMode.Default;
             txtCPF.LeadingIcon = null;
             txtCPF.Location = new Point(7, 114);
-            txtCPF.Mask = "999.999.999-99";
+            txtCPF.Mask = "999\\.999\\.999-99";
             txtCPF.MaxLength = 32767;
             txtCPF.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtCPF.Name = "txtCPF";
@@ -173,9 +169,9 @@
             txtCPF.ShortcutsEnabled = true;
             txtCPF.Size = new Size(548, 48);
             txtCPF.SkipLiterals = true;
-            txtCPF.TabIndex = 9;
+            txtCPF.TabIndex = 2;
             txtCPF.TabStop = false;
-            txtCPF.Text = "   ,   ,   -";
+            txtCPF.Text = "   .   .   -";
             txtCPF.TextAlign = HorizontalAlignment.Left;
             txtCPF.TextMaskFormat = MaskFormat.IncludeLiterals;
             txtCPF.TrailingIcon = null;
@@ -207,7 +203,7 @@
             txtEmail.SelectionStart = 0;
             txtEmail.ShortcutsEnabled = true;
             txtEmail.Size = new Size(548, 48);
-            txtEmail.TabIndex = 8;
+            txtEmail.TabIndex = 1;
             txtEmail.TabStop = false;
             txtEmail.TextAlign = HorizontalAlignment.Left;
             txtEmail.TrailingIcon = null;
@@ -238,7 +234,7 @@
             txtNome.SelectionStart = 0;
             txtNome.ShortcutsEnabled = true;
             txtNome.Size = new Size(461, 48);
-            txtNome.TabIndex = 7;
+            txtNome.TabIndex = 0;
             txtNome.TabStop = false;
             txtNome.TextAlign = HorizontalAlignment.Left;
             txtNome.TrailingIcon = null;
@@ -269,7 +265,7 @@
             txtEspecializacao.SelectionStart = 0;
             txtEspecializacao.ShortcutsEnabled = true;
             txtEspecializacao.Size = new Size(548, 48);
-            txtEspecializacao.TabIndex = 12;
+            txtEspecializacao.TabIndex = 5;
             txtEspecializacao.TabStop = false;
             txtEspecializacao.TextAlign = HorizontalAlignment.Left;
             txtEspecializacao.TrailingIcon = null;
@@ -296,7 +292,7 @@
             cboCidade.Name = "cboCidade";
             cboCidade.Size = new Size(371, 49);
             cboCidade.StartIndex = 0;
-            cboCidade.TabIndex = 13;
+            cboCidade.TabIndex = 4;
             // 
             // CadastroPalestrante
             // 

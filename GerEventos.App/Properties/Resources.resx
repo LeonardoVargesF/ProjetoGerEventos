@@ -117,4 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="11-dicas-essenciais-para-organizar-um-workshop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11-dicas-essenciais-para-organizar-um-workshop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="17-imagens-de-destaque_guia-de-planejamento-de-eventos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\17-imagens-de-destaque_guia-de-planejamento-de-eventos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plano-de-fundo-texturizado-de-concreto-grunge-preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plano-de-fundo-texturizado-de-concreto-grunge-preto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Leonardo Eventos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Leonardo Eventos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

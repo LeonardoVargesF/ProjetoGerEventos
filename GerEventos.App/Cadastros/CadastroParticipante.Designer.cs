@@ -58,10 +58,6 @@
             tabPageCadastro.Controls.SetChildIndex(txtId, 0);
             tabPageCadastro.Controls.SetChildIndex(cboCidade, 0);
             // 
-            // tabPageConsulta
-            // 
-            tabPageConsulta.Size = new Size(536, 396);
-            // 
             // txtNome
             // 
             txtNome.AnimateReadOnly = false;
@@ -87,7 +83,7 @@
             txtNome.SelectionStart = 0;
             txtNome.ShortcutsEnabled = true;
             txtNome.Size = new Size(461, 48);
-            txtNome.TabIndex = 2;
+            txtNome.TabIndex = 0;
             txtNome.TabStop = false;
             txtNome.TextAlign = HorizontalAlignment.Left;
             txtNome.TrailingIcon = null;
@@ -118,7 +114,7 @@
             txtEmail.SelectionStart = 0;
             txtEmail.ShortcutsEnabled = true;
             txtEmail.Size = new Size(548, 48);
-            txtEmail.TabIndex = 3;
+            txtEmail.TabIndex = 1;
             txtEmail.TabStop = false;
             txtEmail.TextAlign = HorizontalAlignment.Left;
             txtEmail.TrailingIcon = null;
@@ -158,7 +154,7 @@
             txtCPF.ShortcutsEnabled = true;
             txtCPF.Size = new Size(548, 48);
             txtCPF.SkipLiterals = true;
-            txtCPF.TabIndex = 4;
+            txtCPF.TabIndex = 2;
             txtCPF.TabStop = false;
             txtCPF.Text = "   ,   ,   -";
             txtCPF.TextAlign = HorizontalAlignment.Left;
@@ -201,7 +197,7 @@
             txtTelefone.ShortcutsEnabled = true;
             txtTelefone.Size = new Size(171, 48);
             txtTelefone.SkipLiterals = true;
-            txtTelefone.TabIndex = 5;
+            txtTelefone.TabIndex = 3;
             txtTelefone.TabStop = false;
             txtTelefone.Text = "(  )      -";
             txtTelefone.TextAlign = HorizontalAlignment.Left;
@@ -262,7 +258,7 @@
             cboCidade.Name = "cboCidade";
             cboCidade.Size = new Size(371, 49);
             cboCidade.StartIndex = 0;
-            cboCidade.TabIndex = 14;
+            cboCidade.TabIndex = 4;
             // 
             // CadastroParticipante
             // 

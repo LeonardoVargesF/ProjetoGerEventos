@@ -28,194 +28,194 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cboParticipante = new ReaLTaiizor.Controls.MaterialComboBox();
-            this.txtId = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutEventos = new System.Windows.Forms.FlowLayoutPanel();
-            this.cboPalestrantes = new ReaLTaiizor.Controls.MaterialComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtTitulo = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            this.txtDuracao = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            this.SuspendLayout();
+            cboParticipante = new ReaLTaiizor.Controls.MaterialComboBox();
+            txtId = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            flowLayoutEventos = new FlowLayoutPanel();
+            cboPalestrantes = new ReaLTaiizor.Controls.MaterialComboBox();
+            label1 = new Label();
+            txtTitulo = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            txtDuracao = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            SuspendLayout();
             // 
             // cboParticipante
             // 
-            this.cboParticipante.AutoResize = false;
-            this.cboParticipante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboParticipante.Depth = 0;
-            this.cboParticipante.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboParticipante.DropDownHeight = 174;
-            this.cboParticipante.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboParticipante.DropDownWidth = 121;
-            this.cboParticipante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboParticipante.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboParticipante.FormattingEnabled = true;
-            this.cboParticipante.Hint = "Participante";
-            this.cboParticipante.IntegralHeight = false;
-            this.cboParticipante.ItemHeight = 43;
-            this.cboParticipante.Location = new System.Drawing.Point(7, 6);
-            this.cboParticipante.MaxDropDownItems = 4;
-            this.cboParticipante.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.cboParticipante.Name = "cboParticipante";
-            this.cboParticipante.Size = new System.Drawing.Size(409, 49);
-            this.cboParticipante.StartIndex = 0;
-            this.cboParticipante.TabIndex = 2;
+            cboParticipante.AutoResize = false;
+            cboParticipante.BackColor = Color.FromArgb(255, 255, 255);
+            cboParticipante.Depth = 0;
+            cboParticipante.DrawMode = DrawMode.OwnerDrawVariable;
+            cboParticipante.DropDownHeight = 174;
+            cboParticipante.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboParticipante.DropDownWidth = 121;
+            cboParticipante.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel);
+            cboParticipante.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            cboParticipante.FormattingEnabled = true;
+            cboParticipante.Hint = "Participante";
+            cboParticipante.IntegralHeight = false;
+            cboParticipante.ItemHeight = 43;
+            cboParticipante.Location = new Point(7, 6);
+            cboParticipante.MaxDropDownItems = 4;
+            cboParticipante.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            cboParticipante.Name = "cboParticipante";
+            cboParticipante.Size = new Size(409, 49);
+            cboParticipante.StartIndex = 0;
+            cboParticipante.TabIndex = 2;
             // 
             // txtId
             // 
-            this.txtId.AnimateReadOnly = false;
-            this.txtId.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtId.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtId.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtId.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtId.Depth = 0;
-            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtId.HideSelection = true;
-            this.txtId.Hint = "Id";
-            this.txtId.LeadingIcon = null;
-            this.txtId.Location = new System.Drawing.Point(422, 8);
-            this.txtId.MaxLength = 32767;
-            this.txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.txtId.Name = "txtId";
-            this.txtId.PasswordChar = '\0';
-            this.txtId.PrefixSuffixText = null;
-            this.txtId.ReadOnly = true;
-            this.txtId.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtId.SelectedText = "";
-            this.txtId.SelectionLength = 0;
-            this.txtId.SelectionStart = 0;
-            this.txtId.ShortcutsEnabled = true;
-            this.txtId.Size = new System.Drawing.Size(124, 48);
-            this.txtId.TabIndex = 5;
-            this.txtId.TabStop = false;
-            this.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtId.TrailingIcon = null;
-            this.txtId.UseSystemPasswordChar = false;
+            txtId.AnimateReadOnly = false;
+            txtId.AutoCompleteMode = AutoCompleteMode.None;
+            txtId.AutoCompleteSource = AutoCompleteSource.None;
+            txtId.BackgroundImageLayout = ImageLayout.None;
+            txtId.CharacterCasing = CharacterCasing.Normal;
+            txtId.Depth = 0;
+            txtId.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtId.HideSelection = true;
+            txtId.Hint = "Id";
+            txtId.LeadingIcon = null;
+            txtId.Location = new Point(422, 8);
+            txtId.MaxLength = 32767;
+            txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            txtId.Name = "txtId";
+            txtId.PasswordChar = '\0';
+            txtId.PrefixSuffixText = null;
+            txtId.ReadOnly = true;
+            txtId.RightToLeft = RightToLeft.No;
+            txtId.SelectedText = "";
+            txtId.SelectionLength = 0;
+            txtId.SelectionStart = 0;
+            txtId.ShortcutsEnabled = true;
+            txtId.Size = new Size(124, 48);
+            txtId.TabIndex = 5;
+            txtId.TabStop = false;
+            txtId.TextAlign = HorizontalAlignment.Left;
+            txtId.TrailingIcon = null;
+            txtId.UseSystemPasswordChar = false;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 62);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(543, 233);
-            this.flowLayoutPanel1.TabIndex = 11;
+            flowLayoutPanel1.Location = new Point(3, 62);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(543, 233);
+            flowLayoutPanel1.TabIndex = 11;
             // 
             // flowLayoutEventos
             // 
-            this.flowLayoutEventos.AutoScroll = true;
-            this.flowLayoutEventos.Location = new System.Drawing.Point(6, 203);
-            this.flowLayoutEventos.Name = "flowLayoutEventos";
-            this.flowLayoutEventos.Size = new System.Drawing.Size(441, 242);
-            this.flowLayoutEventos.TabIndex = 0;
+            flowLayoutEventos.AutoScroll = true;
+            flowLayoutEventos.Location = new Point(6, 203);
+            flowLayoutEventos.Name = "flowLayoutEventos";
+            flowLayoutEventos.Size = new Size(441, 242);
+            flowLayoutEventos.TabIndex = 0;
             // 
             // cboPalestrantes
             // 
-            this.cboPalestrantes.AutoResize = false;
-            this.cboPalestrantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboPalestrantes.Depth = 0;
-            this.cboPalestrantes.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboPalestrantes.DropDownHeight = 174;
-            this.cboPalestrantes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboPalestrantes.DropDownWidth = 121;
-            this.cboPalestrantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboPalestrantes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboPalestrantes.FormattingEnabled = true;
-            this.cboPalestrantes.IntegralHeight = false;
-            this.cboPalestrantes.ItemHeight = 43;
-            this.cboPalestrantes.Location = new System.Drawing.Point(8, 96);
-            this.cboPalestrantes.MaxDropDownItems = 4;
-            this.cboPalestrantes.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.cboPalestrantes.Name = "cboPalestrantes";
-            this.cboPalestrantes.Size = new System.Drawing.Size(269, 49);
-            this.cboPalestrantes.StartIndex = 0;
-            this.cboPalestrantes.TabIndex = 1;
+            cboPalestrantes.AutoResize = false;
+            cboPalestrantes.BackColor = Color.FromArgb(255, 255, 255);
+            cboPalestrantes.Depth = 0;
+            cboPalestrantes.DrawMode = DrawMode.OwnerDrawVariable;
+            cboPalestrantes.DropDownHeight = 174;
+            cboPalestrantes.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboPalestrantes.DropDownWidth = 121;
+            cboPalestrantes.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel);
+            cboPalestrantes.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            cboPalestrantes.FormattingEnabled = true;
+            cboPalestrantes.IntegralHeight = false;
+            cboPalestrantes.ItemHeight = 43;
+            cboPalestrantes.Location = new Point(8, 96);
+            cboPalestrantes.MaxDropDownItems = 4;
+            cboPalestrantes.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            cboPalestrantes.Name = "cboPalestrantes";
+            cboPalestrantes.Size = new Size(269, 49);
+            cboPalestrantes.StartIndex = 0;
+            cboPalestrantes.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(104, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Selecione o Palestrante para Inscrição!";
+            label1.AutoSize = true;
+            label1.Location = new Point(104, 78);
+            label1.Name = "label1";
+            label1.Size = new Size(207, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Selecione o Palestrante para Inscrição!";
             // 
             // txtTitulo
             // 
-            this.txtTitulo.AnimateReadOnly = false;
-            this.txtTitulo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtTitulo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtTitulo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtTitulo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtTitulo.Depth = 0;
-            this.txtTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtTitulo.HideSelection = true;
-            this.txtTitulo.Hint = "Titulo da Palestra";
-            this.txtTitulo.LeadingIcon = null;
-            this.txtTitulo.Location = new System.Drawing.Point(8, 149);
-            this.txtTitulo.MaxLength = 32767;
-            this.txtTitulo.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.PasswordChar = '\0';
-            this.txtTitulo.PrefixSuffixText = null;
-            this.txtTitulo.ReadOnly = false;
-            this.txtTitulo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtTitulo.SelectedText = "";
-            this.txtTitulo.SelectionLength = 0;
-            this.txtTitulo.SelectionStart = 0;
-            this.txtTitulo.ShortcutsEnabled = true;
-            this.txtTitulo.Size = new System.Drawing.Size(439, 48);
-            this.txtTitulo.TabIndex = 3;
-            this.txtTitulo.TabStop = false;
-            this.txtTitulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtTitulo.TrailingIcon = null;
-            this.txtTitulo.UseSystemPasswordChar = false;
+            txtTitulo.AnimateReadOnly = false;
+            txtTitulo.AutoCompleteMode = AutoCompleteMode.None;
+            txtTitulo.AutoCompleteSource = AutoCompleteSource.None;
+            txtTitulo.BackgroundImageLayout = ImageLayout.None;
+            txtTitulo.CharacterCasing = CharacterCasing.Normal;
+            txtTitulo.Depth = 0;
+            txtTitulo.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtTitulo.HideSelection = true;
+            txtTitulo.Hint = "Titulo da Palestra";
+            txtTitulo.LeadingIcon = null;
+            txtTitulo.Location = new Point(8, 149);
+            txtTitulo.MaxLength = 32767;
+            txtTitulo.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            txtTitulo.Name = "txtTitulo";
+            txtTitulo.PasswordChar = '\0';
+            txtTitulo.PrefixSuffixText = null;
+            txtTitulo.ReadOnly = false;
+            txtTitulo.RightToLeft = RightToLeft.No;
+            txtTitulo.SelectedText = "";
+            txtTitulo.SelectionLength = 0;
+            txtTitulo.SelectionStart = 0;
+            txtTitulo.ShortcutsEnabled = true;
+            txtTitulo.Size = new Size(439, 48);
+            txtTitulo.TabIndex = 2;
+            txtTitulo.TabStop = false;
+            txtTitulo.TextAlign = HorizontalAlignment.Left;
+            txtTitulo.TrailingIcon = null;
+            txtTitulo.UseSystemPasswordChar = false;
             // 
             // txtDuracao
             // 
-            this.txtDuracao.AnimateReadOnly = false;
-            this.txtDuracao.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtDuracao.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtDuracao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtDuracao.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtDuracao.Depth = 0;
-            this.txtDuracao.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtDuracao.HideSelection = true;
-            this.txtDuracao.Hint = "Duração(minutos)";
-            this.txtDuracao.LeadingIcon = null;
-            this.txtDuracao.Location = new System.Drawing.Point(283, 96);
-            this.txtDuracao.MaxLength = 32767;
-            this.txtDuracao.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.txtDuracao.Name = "txtDuracao";
-            this.txtDuracao.PasswordChar = '\0';
-            this.txtDuracao.PrefixSuffixText = null;
-            this.txtDuracao.ReadOnly = false;
-            this.txtDuracao.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtDuracao.SelectedText = "";
-            this.txtDuracao.SelectionLength = 0;
-            this.txtDuracao.SelectionStart = 0;
-            this.txtDuracao.ShortcutsEnabled = true;
-            this.txtDuracao.Size = new System.Drawing.Size(164, 48);
-            this.txtDuracao.TabIndex = 4;
-            this.txtDuracao.TabStop = false;
-            this.txtDuracao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtDuracao.TrailingIcon = null;
-            this.txtDuracao.UseSystemPasswordChar = false;
+            txtDuracao.AnimateReadOnly = false;
+            txtDuracao.AutoCompleteMode = AutoCompleteMode.None;
+            txtDuracao.AutoCompleteSource = AutoCompleteSource.None;
+            txtDuracao.BackgroundImageLayout = ImageLayout.None;
+            txtDuracao.CharacterCasing = CharacterCasing.Normal;
+            txtDuracao.Depth = 0;
+            txtDuracao.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtDuracao.HideSelection = true;
+            txtDuracao.Hint = "Duração(minutos)";
+            txtDuracao.LeadingIcon = null;
+            txtDuracao.Location = new Point(283, 96);
+            txtDuracao.MaxLength = 32767;
+            txtDuracao.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            txtDuracao.Name = "txtDuracao";
+            txtDuracao.PasswordChar = '\0';
+            txtDuracao.PrefixSuffixText = null;
+            txtDuracao.ReadOnly = false;
+            txtDuracao.RightToLeft = RightToLeft.No;
+            txtDuracao.SelectedText = "";
+            txtDuracao.SelectionLength = 0;
+            txtDuracao.SelectionStart = 0;
+            txtDuracao.ShortcutsEnabled = true;
+            txtDuracao.Size = new Size(164, 48);
+            txtDuracao.TabIndex = 1;
+            txtDuracao.TabStop = false;
+            txtDuracao.TextAlign = HorizontalAlignment.Left;
+            txtDuracao.TrailingIcon = null;
+            txtDuracao.UseSystemPasswordChar = false;
             // 
             // CadastroPalestranteEvento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(453, 451);
-            this.Controls.Add(this.txtDuracao);
-            this.Controls.Add(this.txtTitulo);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cboPalestrantes);
-            this.Controls.Add(this.flowLayoutEventos);
-            this.Name = "CadastroPalestranteEvento";
-            this.Text = "Inscrição de Palestrante";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
+            ClientSize = new Size(453, 451);
+            Controls.Add(txtTitulo);
+            Controls.Add(txtDuracao);
+            Controls.Add(label1);
+            Controls.Add(cboPalestrantes);
+            Controls.Add(flowLayoutEventos);
+            Name = "CadastroPalestranteEvento";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Inscrição de Palestrante";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

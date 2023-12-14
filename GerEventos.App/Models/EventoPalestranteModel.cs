@@ -13,7 +13,7 @@ namespace GerEventos.App.Models
         public int TempoDuracao { get; set; }
         public int IdEvento { get; set; }
         public string? Evento { get; set; }
-        public int idPalestrante { get; set; }
+        public int IdPalestrante { get; set; }
         public string? Palestrante { get; set; }
     }
 }

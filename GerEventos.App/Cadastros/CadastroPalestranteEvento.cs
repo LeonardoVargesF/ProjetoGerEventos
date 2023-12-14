@@ -1,4 +1,4 @@
-﻿using GerEventos.App.Base;
+﻿    using GerEventos.App.Base;
 using GerEventos.App.Models;
 using GerEventos.App.Outros;
 using GerEventos.Domain.Base;
@@ -49,6 +49,7 @@ namespace GerEventos.App.Cadastros
                 even.lblDataEvento.Text = evento.DataEvento.ToString("dd/MM/yyyy HH:mm:ss");
                 even.lblIdEvento.Text = evento.Id.ToString();
                 even.btnInscrever.Tag = evento.Id.ToString();
+                even.btnCancelarInsc.Tag = evento.Id.ToString();
                 even.btnInscrever.Click += btn_inscrever_Click;
                 even.btnCancelarInsc.Click += btn_cancelar_Click;
 
@@ -59,26 +60,77 @@ namespace GerEventos.App.Cadastros
         private void btn_inscrever_Click(object? sender, EventArgs e)
         {
             int.TryParse(txtDuracao.Text, out var duracao);
+            int.TryParse(cboPalestrantes.SelectedValue.ToString(), out var idPalestrante);
+            var palestrante = _palestranteService.GetById<Palestrante>(idPalestrante);
+            int.TryParse(((MaterialButton)sender).Tag.ToString(), out var idEvento);
 
-            int.TryParse(cboPalestrantes.SelectedValue.ToString(), out var idGrupo);
-            var palestrante = _palestranteService.GetById<Palestrante>(idGrupo);
+            bool taCadastrado = false;
+            bool limiteInscricao = true;
+            int tempoTotal;
 
-            int.TryParse(((MaterialButton)sender).Tag.ToString(), out var id);
-
-            var inscricao = new EventoPalestrante()
+            var insceventos = _eventopalestranteService.Get<EventoPalestrante>(new List<string>() { "Evento" , "Palestrante"});
+            foreach(var  inscevento in insceventos)
             {
-                TituloPalestra = txtTitulo.Text,
-                TempoDuracao = duracao,
-                Evento = new Evento() { Id = id },
-                Palestrante = palestrante,
+                if (inscevento.Palestrante.Id == idPalestrante && inscevento.Evento.Id == idEvento)
+                {
+                    taCadastrado = true;
+                }
+            }
 
-            };
-            _eventopalestranteService.Add<EventoPalestrante, EventoPalestrante, EventoPalestranteValidator>(inscricao);
 
+            if (!taCadastrado)
+            {
+                try
+                {
+                    var inscricao = new EventoPalestrante()
+                    {
+                        TituloPalestra = txtTitulo.Text,
+                        TempoDuracao = duracao,
+                        Evento = new Evento() { Id = idEvento },
+                        Palestrante = palestrante,
+
+                    };
+                    _eventopalestranteService.Add<EventoPalestrante, EventoPalestrante, EventoPalestranteValidator>(inscricao);
+                    MessageBox.Show(@"Cadastro Realizado!", @"GEREVENTOS", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, @"GEREVENTOS", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show(@"Você ja está cadastrado nesse evento!", @"GEREVENTOS", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+            }
         }
 
         private void btn_cancelar_Click(object? sender, EventArgs e)
         {
+            int.TryParse(txtDuracao.Text, out var duracao);
+            int.TryParse(cboPalestrantes.SelectedValue.ToString(), out var idPalestrante);
+            int.TryParse(((MaterialButton)sender).Tag.ToString(), out var idEvento);
+
+            bool taCadastrado = false;
+
+            var insceventos = _eventopalestranteService.Get<EventoPalestrante>(new List<string>() { "Evento", "Palestrante" });
+            foreach (var inscevento in insceventos)
+            {
+                if (inscevento.Palestrante.Id == idPalestrante && inscevento.Evento.Id == idEvento)
+                {
+                    taCadastrado = true;
+                    _eventopalestranteService.Delete(inscevento.Id);
+                    MessageBox.Show(@"Você cancelou seu cadastro nesse evento!", @"GEREVENTOS", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                }
+            }
+
+            if (!taCadastrado)
+            {
+                MessageBox.Show(@"Você não esta cadastrado nesse evento!", @"GEREVENTOS", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
 
         }
 

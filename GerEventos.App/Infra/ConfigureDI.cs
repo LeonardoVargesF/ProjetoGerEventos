@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using GerEventos.App.Cadastros;
 using GerEventos.App.Models;
+using GerEventos.App.Outros;
 using GerEventos.Domain.Base;
 using GerEventos.Domain.Entities;
 using GerEventos.Repository.Context;
@@ -60,6 +61,7 @@ namespace GerEventos.App.Infra
             Services.AddTransient<CadastroCidade, CadastroCidade>();
             Services.AddTransient<CadastroInscricao, CadastroInscricao>();
             Services.AddTransient<CadastroPalestranteEvento, CadastroPalestranteEvento>();
+            Services.AddTransient<Relatorio, Relatorio>();
 
             // Mapping
             Services.AddSingleton(new MapperConfiguration(config =>
@@ -76,7 +78,7 @@ namespace GerEventos.App.Infra
                     .ForMember(d => d.Evento, d => d.MapFrom(x => $"{x.Evento!.Nome}"))
                     .ForMember(d => d.IdEvento, d => d.MapFrom(x => x.Evento!.Id))
                     .ForMember(d => d.Palestrante, d => d.MapFrom(x => $"{x.Palestrante!.Nome}"))
-                    .ForMember(d => d.idPalestrante, d => d.MapFrom(x => x.Palestrante!.Id));
+                    .ForMember(d => d.IdPalestrante, d => d.MapFrom(x => x.Palestrante!.Id));
                 config.CreateMap<Evento, EventoModel>()
                     .ForMember(d => d.Cidade, d => d.MapFrom(x => $"{x.Cidade!.Nome}/{x.Cidade!.Estado}"))
                     .ForMember(d => d.IdCidade, d => d.MapFrom(x => x.Cidade!.Id));
@@ -84,7 +86,7 @@ namespace GerEventos.App.Infra
                     .ForMember(d => d.Evento, d => d.MapFrom(x => $"{x.Evento!.Nome}"))
                     .ForMember(d => d.IdEvento, d => d.MapFrom(x => x.Evento!.Id))
                     .ForMember(d => d.Participante, d => d.MapFrom(x => $"{x.Participante!.Nome}"))
-                    .ForMember(d => d.idParticipante, d => d.MapFrom(x => x.Participante!.Id));
+                    .ForMember(d => d.IdParticipante, d => d.MapFrom(x => x.Participante!.Id));
             }).CreateMapper());
 
             ServicesProvider = Services.BuildServiceProvider();

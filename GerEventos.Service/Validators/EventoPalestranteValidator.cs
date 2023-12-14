@@ -20,7 +20,7 @@ namespace GerEventos.Service.Validators
             .NotEmpty().WithMessage("Por favor informe o tempo.")
             .NotNull().WithMessage("Por favor informe o tempo.");
 
-        RuleFor(c => c.Evento)
+            RuleFor(c => c.Evento)
             .NotEmpty().WithMessage("Por favor informe o evento.")
             .NotNull().WithMessage("Por favor informe o evento.");
 

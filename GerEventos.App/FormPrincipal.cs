@@ -1,5 +1,6 @@
 using GerEventos.App.Cadastros;
 using GerEventos.App.Infra;
+using GerEventos.App.Outros;
 using GerEventos.Domain.Entities;
 using Microsoft.Extensions.DependencyInjection;
 using ReaLTaiizor.Forms;
@@ -63,10 +64,15 @@ namespace GerEventos.App
             Exibeformulario<CadastroPalestranteEvento>();
         }
 
+
         private void sairToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             Close();
         }
-   
+
+        private void inscriçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Exibeformulario<Relatorio>();
+        }
     }
 }
